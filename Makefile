@@ -54,4 +54,7 @@ uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
 
+git:
+	git remote add upstream git://git.suckless.org/st
+
 .PHONY: all options clean dist install uninstall
